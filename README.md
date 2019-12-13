@@ -1,16 +1,10 @@
 # README #
 
-The repository is a single source of truth for all our documentation,
-both public and private.
+The repository is a single source of truth for all our documentation. 
 
-Please use the docs.wiki/ repository if you wish to make any content
-public.
+Check out the [wiki](https://github.com/prismlab/docs/) for articles authored by prismlab members. 
 
-```
-$ git clone https://github.com/prismlab/docs.wiki.git
-```
-
-The docs/ repository content will have all internal documentation and
+The docs/ repository content will have all documentation and
 links to external references, in the following categories:
 
 * articles/
