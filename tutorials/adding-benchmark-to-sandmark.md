@@ -1,3 +1,6 @@
+Adding a benchmark to Sandmark
+---
+
 ## Quickstart
 1. Add your dependencies to the `packages` folder
 2. Add your benchmark code in `benchmark` folder and create a `dune` file with the alias `dune_bench`
