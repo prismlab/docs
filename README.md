@@ -2,8 +2,6 @@
 
 The repository is a single source of truth for all our documentation. 
 
-Check out the [wiki](https://github.com/prismlab/docs/) for articles authored by prismlab members. 
-
 The docs/ repository content will have all documentation and
 links to external references, in the following categories:
 
@@ -20,7 +18,7 @@ $ git clone git@github.com:prismlab/docs.git
 ```
 
 A `README.md` file under each category folder will contain a list of all
-the external references.
+the external references and an index of the contributed articles. 
 
 Please feel free to create sub-categories as needed. For example, a
 compiler section can have sub-categories like parsing, syntax
