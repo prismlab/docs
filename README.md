@@ -10,6 +10,8 @@ links to external references, in the following categories:
 * articles/
 * papers/
 * textbooks/
+* tutorials/
+* misc/
 
 You can clone the above repository using:
 
