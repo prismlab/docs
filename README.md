@@ -23,7 +23,7 @@ You can clone the above repository using:
 $ git clone git@github.com:prismlab/docs.git
 ```
 
-An index.md file under each category folder will contain a list of all
+A `README.md` file under each category folder will contain a list of all
 the external references.
 
 Please feel free to create sub-categories as needed. For example, a
