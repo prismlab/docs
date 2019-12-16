@@ -166,7 +166,7 @@ This folder has a requirement to be understood by the build system, it should ha
 (executable
  (name stringext_ex1)
  (modules stringext_ex1)
- (libraries stringext)
+ (libraries stringext))
 
 (alias (name mybench) (deps stringext1_ex1.exe))
 ```
