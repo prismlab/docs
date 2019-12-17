@@ -1,4 +1,4 @@
-Other things that do not fit a category
+Miscellaneous
 ---
 
-1. [Glossary](https://github.com/prismlab/docs/blob/master/misc/glossary.md)
+* [Glossary](https://github.com/prismlab/docs/blob/master/misc/glossary.md)
