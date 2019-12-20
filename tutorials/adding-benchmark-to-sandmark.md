@@ -168,7 +168,7 @@ This folder has a requirement to be understood by the build system, it should ha
  (modules stringext_ex1)
  (libraries stringext))
 
-(alias (name mybench) (deps stringext1_ex1.exe))
+(alias (name mybench) (deps stringext_ex1.exe))
 ```
 
 Without going into too much detail into the `dune` syntax, what we can take away here is that all the executables that should be produced by your benchmark should be listed with this syntax. Finally, you need to define a `alias`, which is used to build all the executable files. The default is `dune_bench`. For multicore, this is `multibench_parallel`. Here we define our own alias and we will see how to build and run that.
