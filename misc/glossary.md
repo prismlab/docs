@@ -8,8 +8,7 @@ ADT     | Abstract Data Type
 Caml    | Categorical Abstract Machine Language
 CRCW    | Concurrent Read, Concurrent Write
 CREW    | Concurrent Read, Exclusive Write
-CSP     | Communicating Sequential Processes
-        | Constraint Satisfaction Problem
+CSP     | Communicating Sequential Processes <br> Constraint Satisfaction Problem
 CTM     | Concepts, Techniques, and Models of Computer Programming (ctm.info.ucl.ac.be)
 DCG     | Definitive Clause Grammar (in Prolog)
 ERCW    | Exclusive Read, Concurrent Write
