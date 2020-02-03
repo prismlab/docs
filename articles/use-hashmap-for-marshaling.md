@@ -38,6 +38,9 @@ OCaml runtime, and to measure the performance improvements. The
 marshalling tests for both OCaml and Multicore OCaml are present in
 testsuite/tests/lib-marshal directory.
 
+Plan
+====
+
 The steps involved are as follows:
 
 1. Run marshaling tests for OCaml Multicore code.
@@ -46,3 +49,59 @@ The steps involved are as follows:
 4. Run marshaling tests for OCaml with use of addrmap.h.
 5. Compare OCaml marshaling test results between linked data structure and hashmap.
 6. Add branch to sandmark for regression testing.
+
+Changes
+=======
+
+- PR: Use hashmap for marshaling
+  (Stephen Dolan, KC Sivaramakrishnan)
+
+  Copied runtime/addrmap.c and runtime/caml/addrmap.h.
+
+  Add addrmap.h and addrmap.c to runtime/.depend by including them in
+  runtime/Makefile.
+
+  Defined Is_power_of_2() function in runtime/caml/misc.h.
+
+  Updated runtime/extern.c to include addrmap.h and to use addrmap.c
+  functions.
+
+Build
+=====
+
+The build steps in OCaml trunk are as follows:
+
+~~~~{.sh}
+$ ./configure
+$ make -j3 world.opt
+~~~~
+
+By default, the --enable-debugger option is enabled.
+
+The following command is used to run all the tests:
+
+~~~~{.sh}
+$ USE_RUNTIME=d OCAMLRUNPARAM=v=0,V=1 make tests
+~~~~
+
+If you would like to run a test from a specific folder, you can use:
+
+~~~~{.sh}
+$ make ONE DIR=tests/lib-marshal
+~~~~
+
+Results
+=======
+
+After porting the changes from Multicore OCaml to Ocaml trunk, there
+are no errors or failing tests:
+
+~~~~{.sh}
+Summary:
+  2642 tests passed
+  40 tests skipped
+   0 tests failed
+  100 tests not started (parent test skipped or failed)
+   0 unexpected errors
+2782 tests considered
+~~~~
