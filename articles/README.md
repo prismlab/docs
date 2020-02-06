@@ -18,9 +18,35 @@
 
 * Sadiq Jaffer, August 29, 2018, [Java's new Z Garbage Collector (ZGC) is very exciting](https://www.opsian.com/blog/javas-new-zgc-is-very-exciting/)
 
+## Hardware Description Languages ##
+
+* [Bluespec Inc to open source its proven BSV high-level HDL tools](https://bluespec.com/2020/01/06/bluespec-inc-to-open-source-its-proven-bsv-high-level-hdl-tools/) 
+
+* [Building a CPU with Haskell](http://yager.io/CPU/CPU1.html)
+
+* [Chisel Project](https://www2.eecs.berkeley.edu/Research/Projects/Data/106903.html)
+
+* [Clash](https://clash-lang.org/)
+
+* [Hardcaml](https://github.com/janestreet/hardcaml)
+
+* [Kansas Lava](https://ku-fpg.github.io/software/kansas-lava/)
+
+* [Tutorial on Lava](https://archives.haskell.org/projects.haskell.org/chalmers-lava2000/Doc/tutorial.pdf)
+
 ## OCaml ##
 
 * [Future of OCaml](https://ocamlverse.github.io/content/future_ocaml.html)
+
+* [Polymorphic versus ordinary variants in OCaml](https://blog.klipse.tech/ocaml/2018/03/16/ocaml-polymorphic-types.html)
+
+## Performance ##
+
+* [Jepsen database tests](https://aphyr.com/tags/jepsen)
+
+* [Let's Talk Locks!](https://www.infoq.com/presentations/go-locks/)
+
+* [The JVM's AllocatePrefetch options: What do they actually do?](https://www.opsian.com/blog/jvms-allocateprefetch-options/)
 
 ## Standards ##
 
@@ -29,3 +55,7 @@
 ## Textbooks ##
 
 * Colin S. Gordon [CS textbooks](http://csgordon.github.io/books.html).
+
+## Tools ##
+
+* [Tools for creating chaos outside AWS](https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/)
