@@ -105,3 +105,20 @@ Summary:
    0 unexpected errors
 2782 tests considered
 ~~~~
+
+The compilation time for `make world` and `make world.opt` for both
+trunk and multicore/use-addrmap-hash-table-for-marshaling branches are
+provided below for reference:
+
+| Branch         | trunk             | hash-table-for-marshaling |
+|----------------|-------------------|---------------------------|
+| make world     | real    2m54.526s | real    2m57.806s         |
+|                | user    2m41.816s | user    2m45.053s         |
+|                | sys     0m11.904s | sys     0m12.345s         |
+|----------------|-------------------|---------------------------|
+| make world.opt | real    5m26.222s | real    5m31.342s         |
+|                | user     5m0.913s | user     5m5.496s         |
+|                | sys     0m24.386s | sys      0m24.972s        |
+|----------------|-------------------|---------------------------|
+
+System: Parabola GNU/Linux-libre on Intel(R) Core(TM) i5-6200 CPU @ 2.30GHz
