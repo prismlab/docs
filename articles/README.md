@@ -56,6 +56,10 @@
 
 * Colin S. Gordon [CS textbooks](http://csgordon.github.io/books.html).
 
+* Martin Kleppmann. [Designing Data-Intensive Applications](https://dataintensive.net/)
+
 ## Tools ##
+
+* [Automerge](https://github.com/automerge/automerge)
 
 * [Tools for creating chaos outside AWS](https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/)
