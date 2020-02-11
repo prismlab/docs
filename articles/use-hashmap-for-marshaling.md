@@ -150,5 +150,29 @@ You can use
 [sandmark-analyze](https://github.com/ocaml-bench/sandmark-analyze) to
 analyze the .bench files from bench2.ocamllabs.io:8083.
 
+Example commit values for using sandmark-compareAB.ipynb:
+
+```
+commit_a = {
+    'host': 'bench2.ocamllabs.io:8083',
+    'environment': 'bench2.ocamllabs.io',
+    'repo_branch_name': 'ocaml_trunk__trunk',
+    'commitid': '87296ee8e0ffa5e29d21fc54b6a8bce3db6e1889',
+    'variant': 'vanilla',
+    'timestamp': '20200206_111510',
+    'ocaml_version': '4.11.0',
+    }
+
+commit_b = {
+    'host': 'bench2.ocamllabs.io:8083',
+    'environment': 'bench2.ocamllabs.io',
+    'repo_branch_name': 'hash_table_marshaling__multicore/use-addrmap-hash-table-for-marshaling',
+    'commitid': '777a4915bbac6d3f6637b0370a51a99690f76537',
+    'variant': 'vanilla',
+    'timestamp': '20200206_103615',
+    'ocaml_version': '4.11.0',
+    }
+```
+
 Note: The sandmark-analyze.ipynb requires the input JSON file to be
 comma separated and enclosed within [].
