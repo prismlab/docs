@@ -20,8 +20,13 @@ struct trail_block {
 
 Source: https://github.com/ocaml/ocaml/blob/trunk/runtime/extern.c
 
-On the other hand, the Multicore OCaml runtime uses a hashmap (addrmap
-in byterun/caml/addrmap.h).
+In OCaml, the visited set is maintained by mutating the header and the
+first fields of the objects being marshaled in place and then rolling
+back the changes after marshaling. This is incompatible with
+concurrent mutators and GC threads. Hence, Multicore ocaml uses an
+external data structure i.e, the hashmap (addrmap in
+byterun/caml/addrmap.h), and does not modify the objects which are
+being marshaled.
 
 ```
 struct addrmap_entry { value key, value; };
