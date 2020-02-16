@@ -176,3 +176,95 @@ commit_b = {
 
 Note: The sandmark-analyze.ipynb requires the input JSON file to be
 comma separated and enclosed within [].
+
+In order to test the built-in ocaml binaries for performance, you will
+need to install the `time` package that provides the /usr/bin/time
+binary. On Parabola GNU/Linux-libre, for example, the install command
+is:
+
+~~~~{.sh}
+$ sudo pacman -S time
+~~~~
+
+A sample test file to measure Marshaling is provided below for
+reference:
+
+~~~~{.ocaml}
+type colour = R | B
+
+type 'a t =
+    Lf
+  | Br of colour * 'a t * 'a * 'a t
+
+let rec list_of_set s =
+  match s with
+    Lf -> []
+  | Br (_, l, x, r) -> x :: list_of_set l @ list_of_set r
+
+let balance t =
+  match t with
+    (B, Br (R, Br (R, a, x, b), y, c), z, d)
+  | (B, Br (R, a, x, Br (R, b, y, c)), z, d)
+  | (B, a, x, Br (R, Br (R, b, y, c), z, d))
+  | (B, a, x, Br (R, b, y, Br (R, c, z, d))) ->
+      Br (R, Br (B, a, x, b), y, Br (B, c, z, d))
+  | (a, b, c, d) -> Br (a, b, c, d)
+
+let rec insert_inner x s =
+  match s with
+    Lf -> Br (R, Lf, x, Lf)
+  | Br (c, l, y, r) ->
+      if x < y
+        then balance (c, insert_inner x l, y, r)
+        else if x > y then balance (c, l, y, insert_inner x r)
+        else Br (c, l, y, r)
+
+let insert x s =
+  match insert_inner x s with
+    Br (_, l, y, r) -> Br (B, l, y, r)
+  | Lf -> assert false
+
+let rec set_of_list l =
+  match l with
+    [] -> Lf
+  | h::t -> insert h (set_of_list t)
+
+let rec size s =
+  match s with
+    Lf -> 0
+  | Br (_, l, _, r) -> 1 + size l + size r
+
+let rec member x s =
+  match s with
+    Lf -> false
+  | Br (_, l, y, r) ->
+     x = y || if x > y then member x r else member x l
+
+let rec pow a = function
+ | 0 -> 1
+ | 1 -> a
+ | n ->
+    let b = pow a (n / 2) in
+    b * b * (if n mod 2 = 0 then 1 else a)
+
+let int_range a b =
+  let rec int_range_rec l a b =
+    if a > b then l
+    else int_range_rec (b :: l) a (b - 1)
+  in (int_range_rec [] a b)
+
+let create_binary_tree h =
+  let number_of_nodes = (pow 2 (h + 1)) - 1 in
+  List.fold_left (fun accum x -> insert x accum) Lf (int_range 1 number_of_nodes)
+
+let u = create_binary_tree 23
+let m = Marshal.to_bytes u []
+~~~~
+
+You can compile and test the same using the following commands from
+the top-level OCaml source directory:
+
+~~~~{.sh}
+$ ./runtime/ocamlrun ./ocamlopt -nostdlib -I stdlib file.ml
+$ /usr/bin/time -v ./a.out
+~~~~
