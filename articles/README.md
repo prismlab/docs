@@ -4,6 +4,8 @@
 
 * [multiMLton benchmarks](https://github.com/kayceesrk/multiMLton/tree/stop-the-world-GC-AMD64/trunk/testing/benchmarks)
 
+* [ReBench: Execute and document benchmarks reproducibly](https://github.com/smarr/ReBench)
+
 * [The Computer Language Benchmarks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/ocaml.html)
 
 ## Garbage Collection ##
@@ -42,11 +44,17 @@
 
 ## Performance ##
 
+* [Continuous Performance Tracking for Better "Everything"!](https://2020.programming-conference.org/details/MoreVMs-2020-papers/11/Continuous-Performance-Tracking-for-Better-Everything-Talk-)
+
 * [Jepsen database tests](https://aphyr.com/tags/jepsen)
 
 * [Let's Talk Locks!](https://www.infoq.com/presentations/go-locks/)
 
 * [The JVM's AllocatePrefetch options: What do they actually do?](https://www.opsian.com/blog/jvms-allocateprefetch-options/)
+
+## Security ##
+
+* [Introduction to Memory Unsafety for VPs of Engineering](https://alexgaynor.net/2019/aug/12/introduction-to-memory-unsafety-for-vps-of-engineering/)
 
 ## Standards ##
 
@@ -61,5 +69,9 @@
 ## Tools ##
 
 * [Automerge](https://github.com/automerge/automerge)
+
+* [LUV: Cross-platform asynchronous I/O and system calls](https://github.com/aantron/luv)
+
+* [SimpleObjectMachine](https://som-st.github.io/)
 
 * [Tools for creating chaos outside AWS](https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/)
