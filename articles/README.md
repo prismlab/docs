@@ -8,6 +8,10 @@
 
 * [The Computer Language Benchmarks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/ocaml.html)
 
+## Courses ##
+
+* Brendan Fong, Bartosz Milewski, and David Spivak. [Programming with Categories](http://brendanfong.com/programmingcats.html) 
+
 ## Garbage Collection ##
 
 * Ben Gamari. [A Concurrent Garbage Collector for the Glasgow Haskell Compiler](http://www.well-typed.com/blog/aux/files/nonmoving-gc/design.pdf)
@@ -18,7 +22,11 @@
 
 * Mike Hearn, June 9, 2019, [Modern garbage collection: Part 2](https://blog.plan99.net/modern-garbage-collection-part-2-1c88847abcfd)
 
+* Rick Hudson. [Getting to Go: The Journey of Go's Garbage Collector](https://blog.golang.org/ismmkeynote)
+
 * Sadiq Jaffer, August 29, 2018, [Java's new Z Garbage Collector (ZGC) is very exciting](https://www.opsian.com/blog/javas-new-zgc-is-very-exciting/)
+
+* [Go memory ballast: How I learnt to stop worrying and love the heap](https://blog.twitch.tv/en/2019/04/10/go-memory-ballast-how-i-learnt-to-stop-worrying-and-love-the-heap-26c2462549a2/)
 
 ## Hardware Description Languages ##
 
@@ -37,6 +45,8 @@
 * [Tutorial on Lava](https://archives.haskell.org/projects.haskell.org/chalmers-lava2000/Doc/tutorial.pdf)
 
 ## OCaml ##
+
+* [Effects Bibliography] (https://github.com/yallop/effects-bibliography)
 
 * [Future of OCaml](https://ocamlverse.github.io/content/future_ocaml.html)
 
@@ -62,9 +72,12 @@
 
 ## Textbooks ##
 
-* Colin S. Gordon [CS textbooks](http://csgordon.github.io/books.html).
+* Bartosz Milewski. [Category Theory for Programmers'](https://github.com/hmemcpy/milewski-ctfp-pdf)
+
+* Colin S. Gordon [CS textbooks](http://csgordon.github.io/books.html)
 
 * Martin Kleppmann. [Designing Data-Intensive Applications](https://dataintensive.net/)
+
 
 ## Tools ##
 

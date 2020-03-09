@@ -1,5 +1,8 @@
 # Papers #
 
+* Daan Leijen.
+  [Type Directed Compilation of Row-typed Algebraic Effects](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/algeff-tr-2016-1.pdf)
+
 * Jan Hoffmann, Ankush Das, Shu-Chun Weng.
   [Towards Automatic Resource Bound Analysis for OCaml](http://www.cs.cmu.edu/~janh/papers/HoffmannW15.pdf)
 
