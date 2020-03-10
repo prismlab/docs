@@ -4,7 +4,13 @@
 
 * [multiMLton benchmarks](https://github.com/kayceesrk/multiMLton/tree/stop-the-world-GC-AMD64/trunk/testing/benchmarks)
 
+* [ReBench: Execute and document benchmarks reproducibly](https://github.com/smarr/ReBench)
+
 * [The Computer Language Benchmarks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/ocaml.html)
+
+## Courses ##
+
+* Brendan Fong, Bartosz Milewski, and David Spivak. [Programming with Categories](http://brendanfong.com/programmingcats.html) 
 
 ## Garbage Collection ##
 
@@ -16,7 +22,11 @@
 
 * Mike Hearn, June 9, 2019, [Modern garbage collection: Part 2](https://blog.plan99.net/modern-garbage-collection-part-2-1c88847abcfd)
 
+* Rick Hudson. [Getting to Go: The Journey of Go's Garbage Collector](https://blog.golang.org/ismmkeynote)
+
 * Sadiq Jaffer, August 29, 2018, [Java's new Z Garbage Collector (ZGC) is very exciting](https://www.opsian.com/blog/javas-new-zgc-is-very-exciting/)
+
+* [Go memory ballast: How I learnt to stop worrying and love the heap](https://blog.twitch.tv/en/2019/04/10/go-memory-ballast-how-i-learnt-to-stop-worrying-and-love-the-heap-26c2462549a2/)
 
 ## Hardware Description Languages ##
 
@@ -36,11 +46,15 @@
 
 ## OCaml ##
 
+* [Effects Bibliography] (https://github.com/yallop/effects-bibliography)
+
 * [Future of OCaml](https://ocamlverse.github.io/content/future_ocaml.html)
 
 * [Polymorphic versus ordinary variants in OCaml](https://blog.klipse.tech/ocaml/2018/03/16/ocaml-polymorphic-types.html)
 
 ## Performance ##
+
+* [Continuous Performance Tracking for Better "Everything"!](https://2020.programming-conference.org/details/MoreVMs-2020-papers/11/Continuous-Performance-Tracking-for-Better-Everything-Talk-)
 
 * [Jepsen database tests](https://aphyr.com/tags/jepsen)
 
@@ -48,14 +62,29 @@
 
 * [The JVM's AllocatePrefetch options: What do they actually do?](https://www.opsian.com/blog/jvms-allocateprefetch-options/)
 
+## Security ##
+
+* [Introduction to Memory Unsafety for VPs of Engineering](https://alexgaynor.net/2019/aug/12/introduction-to-memory-unsafety-for-vps-of-engineering/)
+
 ## Standards ##
 
 * [System V Application Binary Interface](https://uclibc.org/docs/psABI-x86_64.pdf)
 
 ## Textbooks ##
 
-* Colin S. Gordon [CS textbooks](http://csgordon.github.io/books.html).
+* Bartosz Milewski. [Category Theory for Programmers'](https://github.com/hmemcpy/milewski-ctfp-pdf)
+
+* Colin S. Gordon [CS textbooks](http://csgordon.github.io/books.html)
+
+* Martin Kleppmann. [Designing Data-Intensive Applications](https://dataintensive.net/)
+
 
 ## Tools ##
+
+* [Automerge](https://github.com/automerge/automerge)
+
+* [LUV: Cross-platform asynchronous I/O and system calls](https://github.com/aantron/luv)
+
+* [SimpleObjectMachine](https://som-st.github.io/)
 
 * [Tools for creating chaos outside AWS](https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/)
