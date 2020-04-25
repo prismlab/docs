@@ -2,7 +2,13 @@
 
 ## Benchmarks ##
 
+* [Gramian matrix benchmark](https://github.com/UnixJunkie/gram-matrix-bench)
+
 * [multiMLton benchmarks](https://github.com/kayceesrk/multiMLton/tree/stop-the-world-GC-AMD64/trunk/testing/benchmarks)
+
+* [Parallel Scans and Prefix Sums](https://www.cs.princeton.edu/courses/archive/fall13/cos326/lec/23-parallel-scan.pdf)
+
+* [Prefix Sum: Shared memory two-level algorithm](https://en.wikipedia.org/wiki/Prefix_sum#Shared_memory:_Two-level_algorithm)
 
 * [ReBench: Execute and document benchmarks reproducibly](https://github.com/smarr/ReBench)
 
@@ -46,9 +52,11 @@
 
 ## OCaml ##
 
-* [Effects Bibliography] (https://github.com/yallop/effects-bibliography)
+* [Effects Bibliography](https://github.com/yallop/effects-bibliography)
 
 * [Future of OCaml](https://ocamlverse.github.io/content/future_ocaml.html)
+
+* [Open Source Compass: OPAM repository](https://opensourcecompass.io/projects/ocaml/opam-repository#overview)
 
 * [Polymorphic versus ordinary variants in OCaml](https://blog.klipse.tech/ocaml/2018/03/16/ocaml-polymorphic-types.html)
 
@@ -56,9 +64,13 @@
 
 * [Continuous Performance Tracking for Better "Everything"!](https://2020.programming-conference.org/details/MoreVMs-2020-papers/11/Continuous-Performance-Tracking-for-Better-Everything-Talk-)
 
+* [Dthreads](https://plasma.cs.umass.edu/emery/dthreads.html)
+
 * [Jepsen database tests](https://aphyr.com/tags/jepsen)
 
 * [Let's Talk Locks!](https://www.infoq.com/presentations/go-locks/)
+
+* [Testing sync at Dropbox](https://dropbox.tech/infrastructure/-testing-our-new-sync-engine)
 
 * [The JVM's AllocatePrefetch options: What do they actually do?](https://www.opsian.com/blog/jvms-allocateprefetch-options/)
 
