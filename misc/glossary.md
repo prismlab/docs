@@ -5,6 +5,7 @@ Note: Use alphabetical order.
 Acronym | Expansion
 ------- | ---------
 ADT     | Abstract Data Type
+ALPS    | Availability, Low Latency, Partition tolerance, high Scalability
 Caml    | Categorical Abstract Machine Language
 CRCW    | Concurrent Read, Concurrent Write
 CREW    | Concurrent Read, Exclusive Write
